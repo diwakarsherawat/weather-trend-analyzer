@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 
-API_KEY = "820e5eabae3f4baaae595740252606"  # 🔑 Replace with your key
+API_KEY = st.secrets["weather_api_key"]
 BASE_URL = "http://api.weatherapi.com/v1/history.json"
 
 def fetch_weather(city, date):
